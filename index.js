@@ -1,11 +1,9 @@
 const express = require("express");
 const axios = require("axios");
 const NodeCache = require("node-cache");
-const { Octokit, App } = require("octokit");
 
 const app = express();
 const cache = new NodeCache();
-const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 const PORT = 3000;
 
 const updateCache = async () => {
@@ -15,11 +13,6 @@ const updateCache = async () => {
 
   const repos = response.data;
   const obj = { repos };
-
-  const ratelimitResponse = await octokit.rest.rateLimit.get();
-  const ratelimit = ratelimitResponse.data.resources.core;
-
-  console.log(ratelimit);
 
   cache.set("repos_data", obj, 10000);
 
