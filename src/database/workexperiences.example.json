@@ -1,1 +1,7 @@
-[{}]
+[{
+    "company": "Company 1",
+    "position": "Position 1",
+    "description": "This is a description",
+    "startDate": "2021-01-01",
+    "endDate": "2021-01-01"
+}]
