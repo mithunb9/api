@@ -130,5 +130,5 @@ dist
 .pnp.*
 .vercel
 
-src/database/projects.example.json
-src/database/workexperiences.example.json
+src/database/projects.json
+src/database/workexperiences.json

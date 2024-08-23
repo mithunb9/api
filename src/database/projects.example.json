@@ -1,0 +1,7 @@
+[{
+    "name": "Project 1",
+    "description": "This is a project",
+    "technologies": ["React", "Node", "Express", "MongoDB"],
+    "github": "https://github.com/username/project1",
+    "live": "https://project1.com"
+}]
