@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API for mithunb.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+  "serve": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mithunb9/api.git"
+  },
+  "author": "Mithun Balasubramanian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mithunb9/api/issues"
+  },
+  "homepage": "https://github.com/mithunb9/api#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.0",
+    "express": "^4.19.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
