@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc",
-  "serve": "node dist/index.js"
+    "build": "tsc && cp -r src/ public",
+    "serve": "node dist/index.js"
   },
   "repository": {
     "type": "git",
